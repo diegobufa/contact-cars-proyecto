@@ -1,7 +1,7 @@
 /* HTML */
-html {
+* {
     box-sizing: border-box;
-    font-size: 62.5%;
+    text-decoration: none; 
     margin:0;
     padding:0;
   }
@@ -9,50 +9,239 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  *{
-    text-decoration: none;  
-   }
-
  
-  /*Menu y Logo */
 
-.barra__menu{    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+  
+*/
+ /*Menu y Logo */
+ header { 
+     width: 100%;
+
+ }
+  
+   
+.enlace{
+    position: absolute;
+    padding: 5px 10px;
+}
+.menu_bar{
+    width: 100%;
+    display: inline-block;
+        
 }
 .logo{
     width:164px;
     height: 69px;
     object-fit: cover;
 }
-.menu_principal{   
+.menu {
+    height: 80px;
+    width: 100%;
+    background: #aae2f3;
+    
+    
+}
+
+.menu ul{   
     display: flex;
     flex-direction: row;
+    float: center;
+    margin-right: 20px;
     text-align: center;
     font-size: 26px;
     list-style: none;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
     }
-.submenu{
-    color:black;
-    margin-right: 30px;
+.menu_bar  li{
+    display: inline-block;
+    line-height: 80px;
+    
 }
-.submenu--activo,
-.submenu:hover{
-   color: blue;
+.menu_bar  li a{
+    color: #000;
+    text-align: center;
+    padding: 7px 10px;
+    text-transform: uppercase;
+}
+.menu li a:hover, .menu li a.active{
+    background:rgba(102, 193, 253, 0.822);
+    transition: .5s;
+    
+    
+
+}
+.checkbtn {
+    display: none;
+    font-size: 30px;
+    color: #000;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+
+}
+#check{
+    display: none;
+}
+.redes_menu{
+    display: flex;
+    float: right;
+    padding-top: 10px;
    
 }
 .redes_menu li{
-    display: inline-block;
+    display:inline-block;
 }
+
+
 .icono__whatsapp,
 .icono__facebook,
 .icono__instagram {
-    width: 48px;
-    height: 48px;
+    width: 45px;
+    height: 45px;
+    
+    
 }
+@media (max-width: 1290px){
+    header { 
+        width: 100%;
+   
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+    } 
+    .icono__whatsapp,
+    .icono__facebook,
+    .icono__instagram {
+        width: 35px;
+        height: 35px;}
+    .menu_bar{
+        margin-left: 20px;
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .enlace {
+        width: 110px;
+    }
+    .logo{
+        width:90px;
+        height: 55px;
+        margin: 10px ;
+    }
+    .redes_menu {
+        display: flex;
+    }
+}
+@media (max-width: 958px){
+
+    header {
+        width: 100%;
+    }
+    .enlace {
+        width: 170px;
+    }
+    .logo{
+        width:90px;
+        height: 55px;
+        margin: 10px ;
+    }
+    .menu_bar{
+        margin-left: 20px;
+        width: 100%;
+        display: inline-block;
+        
+    }
+    .menu ul {
+        margin: auto;
+    }
+    .menu ul li a{
+        font-size: 12px;
+        text-align: center;
+
+    }
+    
+    .icono__whatsapp,
+    .icono__facebook,
+    .icono__instagram {
+        width: 25px;
+        height: 25px;}
+    
+   
+
+}
+@media (max-width: 858px){
+    header {
+        width: 100%;
+    }
+    .logo{
+        width:90px;
+        height: 55px;
+        margin: 10px ;
+    }
+    .redes_menu {
+        display: none;
+    }
+    .icono__whatsapp,
+    .icono__facebook,
+    .icono__instagram {
+        width: 35px;
+        height: 35px;}
+    .checkbtn {
+        display: block;
+
+    }
+    .menu ul{
+        position: fixed;
+        display: flex;
+        flex-direction: column;       
+        width: 100%;
+        height: 100vh;
+        background: #bee4f8;
+        top: 80px;
+        left: -100%;
+        text-align:center;
+        transition: all .5s;
+        align-items: center;
+
+
+    }
+    .menu ul li{
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+        padding-top: 50px;
+
+    }
+    .menu ul li a{
+        font-size: 22px;
+        
+       
+        
+
+    }
+    .menu ul li a.active, .menu ul li a:hover {
+        background: none;
+        color: red;
+       
+
+    }
+    #check:checked ~ul {
+        left:0;
+        
+    }
+   
+   
+}
+
+     
+   
 
 
 /*Fotos Slider **/
@@ -66,8 +255,8 @@ html {
     padding: 0;   
     display: flex;
     width: 400%;
-    animation: cambio 20s infinite;
-    animation-timing-function: ease-in;
+    animation: cambio 20s alternate;
+    animation-timing-function: linear;
     
     }
 .slider li{
@@ -93,41 +282,132 @@ html {
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
 }
-.texto_mano_foto{
-    position:absolute;
-    left: 150px;
-    top: 90px;
-    font-size: 33px;
-    color: aliceblue;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 0px 4px 4px rgba (0, 0, 0, 0.25);
-}
+
+
+
 
 /* Medios de Pagos */
+
+@media (max-width: 450px){
+    .fpagos .medios_de_pago h2{
+        font-size: 12px;
+        line-height: 30px;
+    
+    }
+    .texto_plan_pagos ul li svg{
+        width: 150px;
+        height: 60px;          
+       
+    }
+    
+    
+    .texto_plan_pagos ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        margin-top: 10px;
+
+    }
+}
+
+
+@media (max-width: 858px){
+    .fpagos h2 {
+        font-size: 16px;
+        line-height: 30px;
+        padding: 10px;
+    }
+    .pagos  li svg {
+        width: 150px;
+        height: 60px;
+        margin: 5px;
+    }
+    .texto_plan_pagos ul li p {
+        font-size: 16px;
+        margin: 5px;
+        
+    }
+    .texto_plan_pagos ul {
+        display: flex;
+        flex-direction:column;
+        justify-items: center;
+        margin-top: 10px;
+
+    }
+}
+@media (max-width: 1024px){
+    .fpagos h2 {
+        font-size: 18px;
+        line-height: 60px;
+        padding: 10px;
+    }
+    .texto_plan_pagos ul li svg{
+        width: 150px;
+        height: 60px;          
+       
+    }
+    
+    .texto_plan_pagos ul li p {
+        font-size: 16px;
+        margin: 5px;
+        
+    }
+    .texto_plan_pagos ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        margin-top: 10px;
+
+    }
+}
+@media (max-width: 1250px){
+    .fpagos h2 {
+        font-size: 22px;
+        line-height: 60px;
+        padding: 10px;
+    }
+    .texto_plan_pagos ul li svg{
+        width: 150px;
+        height: 60px;          
+       
+    }
+    
+    .texto_plan_pagos ul li p {
+        font-size: 16px;
+        margin: 5px;
+        
+    }
+    .texto_plan_pagos ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        margin-top: 10px;
+
+    }
+}
+
 .medios_de_pago{
-    display: flex;
-    flex-direction:column;
-    gap: 10px;   
+     
     Width: 100%;
     Height: 113px;
     background-color: rgba(8, 166, 254, 0.35);
 }
 
-.texto_pago{
+.texto_pago {
     font-size: 30px;    
     text-transform: uppercase;    
     text-align: center;
-    text-decoration: solid;    
+    text-decoration: solid;   
+    line-height: 100px; 
 }
-.pagos{
+.pagos {
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style: none;
 }
 
-.pagos li p {
+.pagos  li p {
     font-size: 24px;
     text-align: center;
     text-transform: uppercase;
@@ -139,36 +419,47 @@ html {
     height: 90px;
 }
 /*Informacion Nosotros */
-
 .nosotros{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    margin: 0 auto;
+    width: 100%;
     }
 .nosotros img{
     margin: 0 auto;
-    width:1156px;
+    width: 100%;
     height: 319px;
     object-fit:contain;
    
 }
 .nosotros p{
-    margin: 0 auto;
+    line-height: 90px;
     width: 100%;
-    height: 200px;
-    font-size: 40px;
+    height: 180px;
+    font-size: 30px;
     text-align: center;
     background-color: #56AADA;
-    padding: 50px;
+   
 }
+@media (max-width: 858px){
+    .nosotros p{
+        font-size: 14px;
+        line-height: 60px;
+    }
+    .nosotros img {
+        width: 100%;
+    }
+    
 
+}
 /* Grilla de Fotos*/
+
+
 .grid_fotos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
-    padding: 30px;
-    margin:30px;    
+    padding: 10px;
+    margin:10px;    
 }
 .contenedor_imagen{
     width: 100%;
@@ -177,6 +468,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
   }
 
 .contenedor_imagen p{
@@ -195,6 +487,9 @@ html {
     border: 2px solid;
     margin: 20px;
     width: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .imagen_producto{
     width:  250px;
@@ -270,8 +565,10 @@ html {
 
 .plan{
     width:300px;
-    margin-left: 40px;
     border: 2px solid;
+    margin: 10px;
+    
+   
 
 }
 .flota_0km{
@@ -286,15 +583,80 @@ html {
     text-transform: uppercase;
     text-align: center;
 }
+@media (max-width: 858px){
+    .flota_0km p {
+        font-size: 22px;
+        line-height: 30px;
+        padding: 30px;
+    }
+    .grid_fotos {
+        display: flex;
+        flex-direction: column;
+    }
+    .producto {
+        margin-top: 20px;
+    }
+    
+    .contenedor figure {
+        width:95%;
+        
+    }
+    .informacion_producto {
+        width: 90%;
+    }
+}
+@media (max-width: 1024px){
+    .flota_0km p {
+        font-size: 22px;
+        line-height: 30px;
+        padding: 30px;
+    }
+    .grid_fotos {
+        display: flex;
+        flex-direction: column;
+    }
+    .producto {
+        margin-top: 20px;
+    }
+    
+    .contenedor figure {
+        width:95%;
+        
+    }
+    .informacion_producto {
+        width: 90%;
+    }
+}
+@media (max-width: 1250px){
+    .flota_0km p {
+        font-size: 22px;
+        line-height: 30px;
+        padding: 30px;
+    }
+    .grid_fotos {
+        display: flex;
+        flex-direction: column;
+    }
+    .producto {
+        margin-top: 20px;
+    }
+    
+    .contenedor figure {
+        width:95%;
+        
+    }
+    .informacion_producto {
+        width: 90%;
+    }
+}
+
 
 /* Asesoria */
 
 .asesoria{
     display: flex;
     flex-direction:row;
-    margin-left: 20px;
-    justify-content: space-evenly;
-   
+      
 }
 .asesoria p{
     text-align: center;
@@ -305,19 +667,65 @@ html {
 .bloque_asesoria a{
    display: flex;
    flex-direction: row;
-   align-items: center;  
-   justify-content: center; 
+   align-items: center;
+   justify-content: center;
    width:420px;
    height: 90px;
    border: 1px solid;
    background-color: #BCF9A7;
    
 }
+.bloque_asesoria {
+    margin: 25px;
+}
 .icono_asesoria{
     width: 48px;
     height: 48px;
-    margin-left: 20px;
+    
 }
+@media (max-width: 858px) {
+    .asesoria {
+        flex-direction: column;
+        align-items: center;
+        
+        
+        
+    }
+    .bloque_asesoria a {
+        margin: 10px;
+        width: 100%;
+
+    }
+}
+@media (max-width: 1024px) {
+    .asesoria {
+        flex-direction: column;
+        align-items: center;
+        
+        
+        
+    }
+    .bloque_asesoria a {
+        margin: 10px;
+        width: 100%;
+
+    }
+}
+@media (max-width: 1250px) {
+    .asesoria {
+        flex-direction: column;
+        align-items: center;
+        
+        
+        
+    }
+    .bloque_asesoria a {
+        margin: 10px;
+        width: 100%;
+
+    }
+}
+
 
 /* Ubicacion gps */
 
@@ -342,6 +750,33 @@ html {
 .iframe{
     width: 1300px;
     height: 500px;
+}
+@media (max-width: 858px) {
+    .gps_mapa {
+    grid-template-columns: repeat(1, 1fr);
+    height: 500px;
+
+}
+.texto_mapa p{
+    font-size: 22px;
+}
+.iframe{
+    width:100%;
+    height: 300px;
+}
+}@media (max-width: 1024px) {
+    .gps_mapa {
+    grid-template-columns: repeat(1, 1fr);
+    height: 500px;
+
+}
+.texto_mapa p{
+    font-size: 22px;
+}
+.iframe{
+    width:100%;
+    height: 300px;
+}
 }
 
 /* Redes Sociales */
@@ -410,6 +845,15 @@ html {
     height: 90px;
 }
 
+@media (max-width: 858px) {
+    .texto_redes {
+        font-size: 24px;
+    }
+    .logo_redes{
+        width: 80px;
+        height: 60px;
+    }
+}
 
 /* Pie de pagina */
 footer {
@@ -456,6 +900,70 @@ footer h3{
 .direcciones_footer p{
     font-size: 22px;
 }
+
+@media (max-width: 1024px){
+     footer h3 {
+        font-size: 16px;
+        margin: 10px;
+    }
+    footer p {
+        font-size: 11px;
+    }
+    .flex_footer p{
+        font-size: 16px;
+        
+    }
+    .derechos_footer p{
+        font-size: 10px;
+    }
+    .derechos_footer {
+        margin: 20px;
+    }
+    
+}
+@media (max-width: 658px){
+    footer h3 {
+       font-size: 16px;
+       margin: 10px;
+   }
+   footer p {
+       font-size: 11px;
+   }
+   .flex_footer p{
+       font-size: 16px;
+       
+   }
+   .derechos_footer p{
+       font-size: 10px;
+   }
+   .derechos_footer {
+       margin: 20px;
+   }
+   @media (max-width: 450px){
+    footer h3 {
+       font-size: 14px;
+       margin: 10px;
+   }
+   footer p {
+       font-size: 11px;
+   }
+   .flex_footer p{
+       font-size: 11px;
+       
+   }
+   .derechos_footer p{
+       font-size: 10px;
+   }
+   .derechos_footer {
+       margin: 20px;
+   }
+   
+}
+   
+}
+   
+
+
 /*Formulario  Pagina Contacto*/
 .formulario legend{
     font-size: 30px;
@@ -740,11 +1248,92 @@ h3{
     width: 750px;
     height: 330px;
 }
+@media (max-width: 1024px){
+    .padre_amarok img {
+        width: 350px;
+        height: 220px;
+        margin: 10px;
+    }
+    .padre_amarok p{
+    
+        font-size: 18px;
+        text-align: center;
+    }
+   
+
+} 
+@media (max-width: 858px){
+    .padre_amarok img {
+        width: 350px;
+        height: 220px;
+        margin: 10px;
+    }
+    .padre_amarok p{
+    
+        font-size: 18px;
+        text-align: center;
+    }
+   
+
+} 
+@media (max-width: 750px){
+    .padre_amarok img {
+        width: 290px;
+        height: 160px;
+        margin: 10px;
+    }
+    .padre_amarok p{
+    
+        font-size: 16px;
+        text-align: center;
+    }
+   
+
+} 
+@media (max-width: 650px){
+        .padre_amarok img {
+            width: 220px;
+            height: 150px;
+            margin: 10px;
+        }
+        .padre_amarok p{
+        
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+       
+@media (max-width: 450px){
+            .padre_amarok img {
+                width: 170px;
+                height: 100px;
+                margin: 20px;
+            }
+            .padre_amarok p{
+            
+                font-size: 12px;
+                text-align: center;
+            }
+@media (max-width: 370px){
+                .padre_amarok img {
+                    width: 120px;
+                    height: 80px;
+                    margin: 20px;
+                }
+                .padre_amarok p{
+                
+                    font-size: 8px;
+                    text-align: center;
+                }
+
+           
+            
+        }
 /* galeria fotos amarok*/
 .amarok_fotos {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33.3% 33.3% ;
     grid-template-areas: "a1 a2"
                          "a1 a4"
                          "a5 a5";
@@ -753,6 +1342,7 @@ h3{
     row-gap: 10px;
     width: 100%;
     height: 1500px;
+    margin-top: 20px;
                          
 }
 .amarok_5{
@@ -789,4 +1379,228 @@ h3{
 .info_amarok p{
     font-size: 22px;
     text-align: center;
+}
+@media (max-width: 450px){
+    .info_amarok p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .amarok_fotos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33.3% 33.3% ;
+        grid-template-areas: "a1 a2"
+                             "a1 a4"
+                             "a5 a5";
+                             
+        column-gap: 2px;
+        row-gap: 2px;
+        margin-top:20px;
+        
+    }
+    .amarok_8 img {
+        width: 90%;
+        height: 200px;
+        margin: 0 auto;
+       
+        }
+    .amarok_7 img{
+            width: 90%;
+            height: 300px;
+        }
+    .amarok_6 img{
+            width: 90%;
+            height: 300px
+        }
+    .amarok_5 img{
+            width: 90%;
+            height: 800px;
+        }
+}
+@media (max-width: 650px){
+    .info_amarok p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .amarok_fotos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33.3% 33.3% ;
+        grid-template-areas: "a1 a2"
+                             "a1 a4"
+                             "a5 a5";
+                             
+        column-gap: 2px;
+        row-gap: 2px;
+        margin-top:20px;
+        
+        
+    }
+    .amarok_8 img {
+        width: 90%;
+        height: 200px;
+        margin: 0 auto;
+       
+        }
+    .amarok_7 img{
+            width: 90%;
+            height: 300px;
+        }
+    .amarok_6 img{
+            width: 90%;
+            height: 300px
+        }
+    .amarok_5 img{
+            width: 90%;
+            height: 800px;
+        }
+}
+@media (max-width: 750px){
+    .info_amarok p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .amarok_fotos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33.3% 33.3% ;
+        grid-template-areas: "a1 a2"
+                             "a1 a4"
+                             "a5 a5";
+                             
+        column-gap: 2px;
+        row-gap: 2px;
+        margin-top:20px;
+        
+    }
+    .amarok_8 img {
+        width: 90%;
+        height: 200px;
+        margin: 0 auto;
+       
+        }
+    .amarok_7 img{
+            width: 90%;
+            height: 300px;
+        }
+    .amarok_6 img{
+            width: 90%;
+            height: 300px
+        }
+    .amarok_5 img{
+            width: 90%;
+            height: 800px;
+        }
+}
+@media (max-width: 858px){
+    .info_amarok p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .amarok_fotos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33.3% 33.3% ;
+        grid-template-areas: "a1 a2"
+                             "a1 a4"
+                             "a5 a5";
+                             
+        column-gap: 2px;
+        row-gap: 2px;
+        margin-top:20px;
+        
+    }
+    .amarok_8 img {
+        width: 90%;
+        height: 200px;
+        margin: 0 auto;
+       
+        }
+    .amarok_7 img{
+            width: 90%;
+            height: 300px;
+        }
+    .amarok_6 img{
+            width: 90%;
+            height: 300px
+        }
+    .amarok_5 img{
+            width: 90%;
+            height: 800px;
+        }
+}
+@media (max-width: 1024px){
+    .info_amarok p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .amarok_fotos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33.3% 33.3% ;
+        grid-template-areas: "a1 a2"
+                             "a1 a4"
+                             "a5 a5";
+                             
+        column-gap: 2px;
+        row-gap: 2px;
+        margin-top:20px;
+        
+    }
+    .amarok_8 img {
+        width: 90%;
+        height: 200px;
+        margin: 0 auto;
+       
+        }
+    .amarok_7 img{
+            width: 90%;
+            height: 300px;
+        }
+    .amarok_6 img{
+            width: 90%;
+            height: 300px
+        }
+    .amarok_5 img{
+            width: 90%;
+            height: 800px;
+        }
+}
+@media (max-width: 1250px){
+    .info_amarok p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .amarok_fotos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33.3% 33.3% ;
+        grid-template-areas: "a1 a2"
+                             "a1 a4"
+                             "a5 a5";
+                             
+        column-gap: 2px;
+        row-gap: 2px;
+        margin-top:20px;
+        
+    }
+    .amarok_8 img {
+        width: 90%;
+        height: 200px;
+        margin: 0 auto;
+       
+        }
+    .amarok_7 img{
+            width: 90%;
+            height: 300px;
+        }
+    .amarok_6 img{
+            width: 90%;
+            height: 300px
+        }
+    .amarok_5 img{
+            width: 90%;
+            height: 800px;
+        }
+}
 }
