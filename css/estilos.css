@@ -9,10 +9,12 @@
   *, *:before, *:after {
     box-sizing: inherit;
   }
- 
+:root {
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+} 
 
   
-*/
+
  /*Menu y Logo */
  header { 
      width: 100%;
@@ -35,7 +37,7 @@
     object-fit: cover;
 }
 .menu {
-    height: 80px;
+    height: 5rem;
     width: 100%;
     background: #aae2f3;
     
@@ -48,7 +50,7 @@
     float: center;
     margin-right: 20px;
     text-align: center;
-    font-size: 26px;
+    font-size: 1.625rem;
     list-style: none;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     
@@ -114,7 +116,7 @@
     .menu ul {
         display: flex;
         flex-direction: row;
-        font-size: 16px;
+        font-size: 1.625rem;
     } 
     .icono__whatsapp,
     .icono__facebook,
@@ -572,17 +574,62 @@
 
 }
 .flota_0km{
-    height: 100px;
-    width: 100%;    
-    background-color:  gray;
+    
+    width: auto;     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
 }
-.flota_0km p{
-    padding: 10px;
-    color:aliceblue;
-    font-size: 50px;
+.name{
+    font-size: 3rem;
     text-transform: uppercase;
-    text-align: center;
+    
+    
 }
+.paragraph {
+    font-size: 2rem;
+    font-weight: 300;
+    --clippy: circle(0% at 50% 50%);
+    
+}
+
+.item{
+    position: relative;
+    padding-left: 1rem;
+    transition: color 1s;
+    
+    
+}
+.item::before{
+    content: "";
+    display: block;
+    background:  slateblue;
+    width: 120%;
+    height: 100%;
+    position: absolute;   
+    z-index: -1;
+    top:0;
+    left:0;
+    clip-path: var(--clippy);
+    transition: clip-path 2s;
+}
+.paragraph::before{
+    background: #f86d70;
+}
+.name:hover::before{
+    clip-path: polygon(0 0, 86% 0, 95% 100%, 0 100%);
+    
+}
+.name:hover + .paragraph::before{
+    clip-path: circle(150% at 50% 50%);
+    transition: clip-path 1.5s 2s;
+}
+.name:hover,
+.name:hover + .paragraph{
+    color: #fff;
+}
+
 @media (max-width: 858px){
     .flota_0km p {
         font-size: 22px;
@@ -660,8 +707,9 @@
 }
 .asesoria p{
     text-align: center;
-    font-size: 28px;
+    font-size: 2rem;
     margin: 0 auto;
+    transition: all 2s;
     
 }
 .bloque_asesoria a{
@@ -673,16 +721,30 @@
    height: 90px;
    border: 1px solid;
    background-color: #BCF9A7;
+   transition-property: all;
+   transition: 2s;
+   transition-timing-function: ease;
+   transition: linear;
+
    
+}
+
+.bloque_asesoria a:hover{
+    color: red;
+}
+.asesoria p:hover{
+    font-size: 2.2rem;
 }
 .bloque_asesoria {
     margin: 25px;
 }
+
 .icono_asesoria{
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     
 }
+
 @media (max-width: 858px) {
     .asesoria {
         flex-direction: column;
@@ -1209,54 +1271,86 @@ footer h3{
 
 .titulo_0km {
     color: red;
-    font-size: 48px;
+    font-size: 3rem;
     text-align: center;
     text-transform: uppercase;
 }
 .padre_amarok{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 40%;
-    grid-template-areas: "a1 a2"
-                         "a3 a4";
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    
 }
 h3{
     color: rgba(0, 162, 255, 0.822);
-    font-size: 44px;
+    font-size: 2.75rem;
     text-align: center;
     text-transform: uppercase;
 }
 
-.amarok_1{
-    grid-area: a1;
-}
-.amarok_2{
-    grid-area: a2;
-}
-.amarok_3{
-    grid-area: a3;
-}
-.amarok_4{
-    grid-area: a4;
-}
+
 .padre_amarok p{
     
-    font-size: 22px;
+    font-size: 1.75rem;
     text-align: center;
+    margin:20px;
 }
 .padre_amarok img{
-    width: 750px;
+    width: 100%;
     height: 330px;
+    margin-top: 20px;
 }
+.contenedor-animado {
+    width: 400px;
+    height: 40px;
+    display: flex;
+    overflow: hidden;
+    font-size: 2rem;    
+    line-height: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 35px;
+    text-transform: uppercase;
+    
+}
+.contenedor-animado ul{
+    list-style: none;
+    padding-left: 10px;
+    animation: cambiar 7s infinite;
+    margin: 0;
+
+}
+.contenedor-animado p {
+    margin:0;
+}
+
+@keyframes cambiar {
+
+    0% { margin-top: 0;}
+    20% {margin-top: 0;}
+
+    25% {margin-top: -40px;}
+    50% {margin-top: -40px;}
+
+    55% {margin-top: -80px;}
+    80% { margin-top: -80px;}
+
+    85% {margin-top: -40px;}
+    95% { margin-top: -40px;}
+
+    100% {margin-top: 0;}
+}
+
 @media (max-width: 1024px){
     .padre_amarok img {
-        width: 350px;
-        height: 220px;
+        width: 46.75rem;
+        height: 13.75rem;
         margin: 10px;
     }
     .padre_amarok p{
     
-        font-size: 18px;
+        font-size: 1.5rem;
         text-align: center;
     }
    
@@ -1264,13 +1358,13 @@ h3{
 } 
 @media (max-width: 858px){
     .padre_amarok img {
-        width: 350px;
-        height: 220px;
+        width: 21.875rem;
+        height: 13.75rem;
         margin: 10px;
     }
     .padre_amarok p{
-    
-        font-size: 18px;
+        grid-template-columns: repeat(1, 1fr);    
+        font-size: 1.5rem;
         text-align: center;
     }
    
@@ -1278,13 +1372,13 @@ h3{
 } 
 @media (max-width: 750px){
     .padre_amarok img {
-        width: 290px;
-        height: 160px;
+        width: 18.125rem;
+        height: 10rem;
         margin: 10px;
     }
     .padre_amarok p{
     
-        font-size: 16px;
+        font-size: 1.5rem;
         text-align: center;
     }
    
@@ -1292,43 +1386,65 @@ h3{
 } 
 @media (max-width: 650px){
         .padre_amarok img {
-            width: 220px;
-            height: 150px;
+            width: 13.75rem;
+            height: 9.375rem;
             margin: 10px;
         }
         .padre_amarok p{
         
-            font-size: 14px;
+            font-size: 1.5rem;
             text-align: center;
         }
     }
        
 @media (max-width: 450px){
+
+            .titulo_0km {
+                font-size: 1.7rem;
+            }   
+            h3{
+                font-size: 1.5rem;
+            }
             .padre_amarok img {
-                width: 170px;
-                height: 100px;
+                width: 90%;
+                height: 10rem;
                 margin: 20px;
             }
             .padre_amarok p{
-            
-                font-size: 12px;
+                margin-top: 20px;
+                font-size: 1rem;
                 text-align: center;
             }
+            .padre_amarok{
+                display: flex;
+                flex-direction: column;   
+                justify-content: center;  
+                align-items: center; 
+                  }
 @media (max-width: 370px){
                 .padre_amarok img {
-                    width: 120px;
-                    height: 80px;
-                    margin: 20px;
+                    width: 90%;
+                    height: 10rem;
+                    margin-top: 20px;
                 }
                 .padre_amarok p{
                 
-                    font-size: 8px;
+                    font-size: 1rem;
                     text-align: center;
                 }
-
-           
-            
-        }
+                .titulo_0km {
+                    font-size: 1.9rem;
+                }   
+                h3{
+                    font-size: 1.5rem;
+                }               
+                .padre_amarok{
+                    display: flex;
+                    flex-direction: column;   
+                    justify-content: center;  
+                    align-items: center; 
+                      }            
+}
 /* galeria fotos amarok*/
 .amarok_fotos {
     display: grid;
@@ -1377,12 +1493,12 @@ h3{
     margin-left: 300px;
     }
 .info_amarok p{
-    font-size: 22px;
+    font-size: 1.375rem;
     text-align: center;
 }
 @media (max-width: 450px){
     .info_amarok p{
-        font-size: 12px;
+        font-size: 1rem;
         text-align: center;
     }
     .amarok_fotos {
@@ -1419,7 +1535,7 @@ h3{
 }
 @media (max-width: 650px){
     .info_amarok p{
-        font-size: 12px;
+        font-size: 1rem;
         text-align: center;
     }
     .amarok_fotos {
