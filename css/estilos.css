@@ -1291,7 +1291,7 @@ h3{
 
 .padre_amarok p{
     
-    font-size: 1.75rem;
+    font-size: 2rem;
     text-align: center;
     margin:20px;
 }
@@ -1350,7 +1350,7 @@ h3{
     }
     .padre_amarok p{
     
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: center;
     }
    
@@ -1381,6 +1381,11 @@ h3{
         font-size: 1.5rem;
         text-align: center;
     }
+    .contenedor-animado {
+        font-size: 1.5rem;
+        color: red;
+        left: 70%;
+    }
    
 
 } 
@@ -1394,6 +1399,9 @@ h3{
         
             font-size: 1.5rem;
             text-align: center;
+        }
+        .contenedor-animado {
+            font-size: 1.5rem;
         }
     }
        
@@ -1412,7 +1420,7 @@ h3{
             }
             .padre_amarok p{
                 margin-top: 20px;
-                font-size: 1rem;
+                font-size: 1.5rem;
                 text-align: center;
             }
             .padre_amarok{
@@ -1421,6 +1429,10 @@ h3{
                 justify-content: center;  
                 align-items: center; 
                   }
+                  .contenedor-animado {
+                    font-size: 1.5rem;
+                }
+}
 @media (max-width: 370px){
                 .padre_amarok img {
                     width: 90%;
@@ -1429,7 +1441,7 @@ h3{
                 }
                 .padre_amarok p{
                 
-                    font-size: 1rem;
+                    font-size: 1.5rem;
                     text-align: center;
                 }
                 .titulo_0km {
@@ -1443,7 +1455,11 @@ h3{
                     flex-direction: column;   
                     justify-content: center;  
                     align-items: center; 
-                      }            
+                      }    
+                      .contenedor-animado {
+                        font-size: 1.1rem;
+                      
+                    }        
 }
 /* galeria fotos amarok*/
 .amarok_fotos {
@@ -1493,7 +1509,7 @@ h3{
     margin-left: 300px;
     }
 .info_amarok p{
-    font-size: 1.375rem;
+    font-size: 2rem;
     text-align: center;
 }
 @media (max-width: 450px){
@@ -1535,7 +1551,7 @@ h3{
 }
 @media (max-width: 650px){
     .info_amarok p{
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-align: center;
     }
     .amarok_fotos {
@@ -1573,7 +1589,7 @@ h3{
 }
 @media (max-width: 750px){
     .info_amarok p{
-        font-size: 12px;
+        font-size: 1.5rem;
         text-align: center;
     }
     .amarok_fotos {
@@ -1610,7 +1626,7 @@ h3{
 }
 @media (max-width: 858px){
     .info_amarok p{
-        font-size: 12px;
+        font-size: 1.5rem;
         text-align: center;
     }
     .amarok_fotos {
@@ -1647,7 +1663,7 @@ h3{
 }
 @media (max-width: 1024px){
     .info_amarok p{
-        font-size: 12px;
+        font-size: 1.5rem;
         text-align: center;
     }
     .amarok_fotos {
@@ -1684,7 +1700,7 @@ h3{
 }
 @media (max-width: 1250px){
     .info_amarok p{
-        font-size: 12px;
+        font-size: 1.5rem;
         text-align: center;
     }
     .amarok_fotos {
@@ -1719,4 +1735,4 @@ h3{
             height: 800px;
         }
 }
-}
+
