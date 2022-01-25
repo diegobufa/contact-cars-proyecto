@@ -1751,11 +1751,9 @@ footer h3{
     margin: 0 !important;
     padding: 15px;
 }
-#galeria img:hover {
+#galeria  img:hover {
     border: 5px solid #fff;
-    position: absolute;
-    height: 500px;
-    width: 30%;
+    
     
 }
 
