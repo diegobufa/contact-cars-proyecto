@@ -1288,7 +1288,9 @@ h3{
     text-transform: uppercase;
 }
 
-
+.amarok_3 {
+    grid-row: 2/3;
+}
 .padre_amarok p{
     
     font-size: 2rem;
