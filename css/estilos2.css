@@ -53,16 +53,14 @@
 .pagos-lista {
   text-align: center;
   align-items: center; }
-
-.pagos-lista p {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  text-align: center;
-  color: #FD1283; }
-
-.pagos-lista svg {
-  width: 200px;
-  height: 90px; }
+  .pagos-lista p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FD1283; }
+  .pagos-lista svg {
+    width: 200px;
+    height: 90px; }
 
 @media (max-width: 858px) {
   .f-pagos {
