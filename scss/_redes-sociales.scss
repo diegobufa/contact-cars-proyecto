@@ -1,5 +1,5 @@
 /* Redes Sociales */
-
+/* se utilizo un extend */
 
 .menu_redes1{
     display: flex;
@@ -46,12 +46,12 @@
     filter: blur(15px);
 }
 .redes_sociales {
-    display: flex;
+    @extend .menu_redes1;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     list-style: none;
+    margin: 0;
 }
+
 
 .texto_redes{
     font-size: 35px;

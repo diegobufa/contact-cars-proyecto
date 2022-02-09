@@ -1,3 +1,6 @@
+/* Archivos Sass */
+/*variables*/
+/* Mixins */
 /* 0km Pagina Web */
 .caja-0km h2 {
   font-size: 3.5rem;
@@ -272,7 +275,8 @@
     font-size: .2rem; } }
 
 /* Redes Sociales */
-.menu_redes1 {
+/* se utilizo un extend */
+.menu_redes1, .redes_sociales {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -312,11 +316,9 @@
   filter: blur(15px); }
 
 .redes_sociales {
-  display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  list-style: none; }
+  list-style: none;
+  margin: 0; }
 
 .texto_redes {
   font-size: 35px;
@@ -337,6 +339,7 @@
     height: 60px; } }
 
 /*gps*/
+/*variables*/
 .gps-texto {
   background: #56AADA; }
   .gps-texto p {
@@ -378,13 +381,12 @@
   height: 9rem;
   padding: 2rem; }
 
-.pagos-lista {
+.pagos-lista, .pagos-lista p {
   text-align: center;
   align-items: center; }
   .pagos-lista p {
     font-size: 1.2rem;
     text-transform: uppercase;
-    text-align: center;
     color: #FD1283; }
   .pagos-lista svg {
     width: 200px;
@@ -400,6 +402,7 @@
   .menu-items {
     font-size: 1.5vh; } }
 
+/* Codigo */
 * {
   margin: 0;
   padding: 0;
