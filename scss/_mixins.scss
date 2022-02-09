@@ -1,0 +1,11 @@
+@mixin caja-0km ($letra, $colorLetra, $align, $mayuscula){
+    font-size: $letra;
+    text-align: $align;
+    color: $colorLetra;
+    text-transform: $mayuscula;
+}
+@mixin footer ($align, $Tletra){
+    text-align: $align;
+    font-size: $Tletra;
+
+}

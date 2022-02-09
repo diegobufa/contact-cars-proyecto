@@ -1,0 +1,41 @@
+/*footer */
+
+
+.footer {
+    padding-top: 2rem;
+    
+    &-dire{
+        @include footer (center,.8rem);
+    }
+    &-hora{
+        @include footer (center,.8rem);
+    }
+    &-pie{
+        @include footer (center, .5rem);
+    }
+   
+}
+.iconos-footer{
+    margin: 10px;
+    text-align: center;
+    
+}
+
+@media (max-width: 858px) {
+    .gps-texto p{
+        font-size: 1rem;
+    }
+    .footer{
+        p {
+        font-size: .8rem;
+        }
+        h3{
+            font-size: .8rem;
+        }
+    } 
+    
+    .footer-pie p{
+        font-size: .2rem;
+    }
+}
+

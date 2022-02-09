@@ -1,74 +1,139 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+/* 0km Pagina Web */
+.caja-0km h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: red;
+  text-transform: uppercase; }
 
-*, *:before, *:after {
-  box-sizing: inherit; }
-
-:root {
-  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%); }
-
-.menu-items {
+.caja-0km h3 {
   font-size: 2rem;
   text-align: center;
-  text-transform: uppercase;
-  margin: 10px;
-  justify-content: flex-end; }
+  color: rgba(0, 162, 255, 0.822);
+  text-transform: uppercase; }
 
-.icono_redes {
-  width: 40px;
-  height: 40px; }
-
-.logo {
-  width: 90px;
-  margin-right: 80px; }
-
-.container-fluid {
-  background: #aae2f3; }
-
-#MenuNavegacion {
-  justify-content: center; }
-
-.menu-items:hover {
-  background: rgba(102, 193, 253, 0.822); }
-
-.carousel-item {
-  height: 35rem; }
-
-.imagen-carousel {
-  height: 100%;
-  object-fit: cover; }
-
-.f-pagos {
+.caja-0km p {
+  font-size: 1.2rem;
   text-align: center;
-  text-transform: uppercase;
+  color: #000;
+  text-transform: uppercase; }
+
+.contenedor-animado {
+  width: 400px;
+  height: 40px;
+  display: flex;
+  overflow: hidden;
   font-size: 2rem;
-  width: 100%;
-  height: 9rem;
-  padding: 2rem; }
+  line-height: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 35px;
+  text-transform: uppercase; }
+  .contenedor-animado ul {
+    list-style: none;
+    padding-left: 10px;
+    animation: cambiar 7s infinite;
+    margin: 0; }
+  .contenedor-animado p {
+    margin: 0; }
 
-.pagos-lista {
-  text-align: center;
-  align-items: center; }
-  .pagos-lista p {
+@keyframes cambiar {
+  0% {
+    margin-top: 0; }
+  20% {
+    margin-top: 0; }
+  25% {
+    margin-top: -40px; }
+  50% {
+    margin-top: -40px; }
+  55% {
+    margin-top: -80px; }
+  80% {
+    margin-top: -80px; }
+  85% {
+    margin-top: -40px; }
+  95% {
+    margin-top: -40px; }
+  100% {
+    margin-top: 0; } }
+
+.grilla-0km {
+  margin-top: 60px; }
+
+.caja-0km {
+  margin: 20px; }
+  .caja-0km p {
     font-size: 1.2rem;
-    text-transform: uppercase;
     text-align: center;
-    color: #FD1283; }
-  .pagos-lista svg {
-    width: 200px;
-    height: 90px; }
+    justify-content: center;
+    padding: 10%; }
+
+#galeria img {
+  width: 100%;
+  height: 300px; }
+
+#galeria .fotos-amarok {
+  margin: 0 !important;
+  padding: 15px; }
+
+#galeria img:hover {
+  border: 5px solid #fff; }
+
+.text-center {
+  font-size: 1.5rem; }
 
 @media (max-width: 858px) {
-  .f-pagos {
-    font-size: 1.2rem;
-    margin: 0;
-    padding: 0;
+  .caja-okm h2 {
+    color: #fff; } }
+
+/* usados*/
+.usados_titulo h2 {
+  color: red;
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase; }
+
+/* fotos e info usados*/
+#grilla_usados {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  margin-bottom: 50px; }
+  #grilla_usados img {
+    width: 450px;
+    height: 350px; }
+
+.grilla_cuerpo {
+  border: 3px solid;
+  margin: 20px;
+  padding: 20px;
+  width: 500px;
+  height: 600px; }
+  .grilla_cuerpo h3 {
+    font-size: 20px;
+    text-align: center; }
+  .grilla_cuerpo p {
+    font-size: 20px;
+    border: 2px solid;
+    width: 200px;
     text-align: center;
-    height: 6rem; } }
+    margin-left: 130px;
+    background: #FC9999;
+    text-transform: uppercase;
+    color: #fff; }
+
+/*descuentos usados */
+.descuentos_usados {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  background-color: #c2e5f8;
+  border-radius: 5%; }
 
 /* grilla de okm*/
 .flota_0km {
@@ -122,44 +187,89 @@
 .name:hover + .paragraph {
   color: #fff; }
 
+.contenedor_imagen {
+  width: 100%; }
+
 .tarjeta {
   height: 100%; }
 
-.tarjeta img {
-  background: #aae2f3; }
+.card figure {
+  position: relative;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  height: 250px;
+  margin: auto; }
 
-.tarjeta h5 {
-  font-size: 1.2rem;
-  text-transform: uppercase;
+.card figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 400ms ease-out;
+  will-change: transform; }
+
+.card figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 103, 123, 0.7);
+  transition: all 400ms ease-out;
+  opacity: 0;
+  visibility: hidden;
   text-align: center; }
 
-.tarjeta p {
-  font-size: 1rem;
+.card figure:hover > .capa {
+  opacity: 1;
+  visibility: visible; }
+
+.card figure:hover > .capa h3 {
+  margin-top: 20px;
+  margin-bottom: 5px; }
+
+.card figure:hover > img {
+  transform: scale(1.3); }
+
+.card figure .capa h3 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 50px;
+  transition: all 400ms ease-out;
+  margin-top: 10px;
+  font-size: 1.1rem;
   text-transform: uppercase;
-  text-align: center; }
+  text-decoration: underline; }
 
-.tarjeta-padre {
-  padding: 30px; }
+.card figure .capa p {
+  color: #fff;
+  line-height: 1.5;
+  width: 70%;
+  margin: auto; }
 
-.icono_asesoria {
-  width: 3rem;
-  height: 3rem; }
+/*footer */
+.footer {
+  padding-top: 2rem; }
+  .footer-dire {
+    text-align: center;
+    font-size: 0.8rem; }
+  .footer-hora {
+    text-align: center;
+    font-size: 0.8rem; }
+  .footer-pie {
+    text-align: center;
+    font-size: 0.5rem; }
 
-.asesoria-icono {
-  justify-content: center;
-  text-align: center;
-  border: 2px solid;
+.iconos-footer {
   margin: 10px;
-  background-color: #BCF9A7;
-  text-decoration: none;
-  padding-top: 1rem; }
+  text-align: center; }
 
-.asesoria-icono p {
-  font-size: 1.2rem;
-  color: #FD1283; }
-
-.asesoria-icono a {
-  text-decoration: none; }
+@media (max-width: 858px) {
+  .gps-texto p {
+    font-size: 1rem; }
+  .footer p {
+    font-size: .8rem; }
+  .footer h3 {
+    font-size: .8rem; }
+  .footer-pie p {
+    font-size: .2rem; } }
 
 /* Redes Sociales */
 .menu_redes1 {
@@ -227,13 +337,12 @@
     height: 60px; } }
 
 /*gps*/
-.gps-texto p {
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-align: center; }
-
 .gps-texto {
   background: #56AADA; }
+  .gps-texto p {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center; }
 
 .gps-iframe {
   width: 100%; }
@@ -241,168 +350,93 @@
 .iframe {
   height: 20rem; }
 
-/*footer */
-.footer {
-  background: antiquewhite;
-  padding-top: 2rem; }
+/*asesoria */
+.icono_asesoria {
+  width: 3rem;
+  height: 3rem; }
 
-.iconos-footer {
-  margin: 10px;
-  text-align: center; }
-
-.footer-dire {
-  text-align: center; }
-
-.footer-hora {
-  text-align: center; }
-
-.footer-pie {
-  font-size: .5rem;
-  text-align: center; }
-
-@media (max-width: 858px) {
-  .gps-texto p {
-    font-size: 1rem; }
-  .footer p {
-    font-size: .8rem; }
-  .footer h3 {
-    font-size: .8rem; }
-  .footer-pie p {
-    font-size: .2rem; } }
-
-/* 0km Pagina Web */
-.caja-0km h2 {
-  font-size: 3.5rem;
-  text-align: center;
-  text-transform: uppercase;
-  color: red; }
-
-.caja-0km h3 {
-  font-size: 2rem;
-  text-align: center;
-  text-transform: uppercase;
-  color: rgba(0, 162, 255, 0.822); }
-
-.contenedor-animado {
-  width: 400px;
-  height: 40px;
-  display: flex;
-  overflow: hidden;
-  font-size: 2rem;
-  line-height: 40px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-left: 35px;
-  text-transform: uppercase; }
-
-.contenedor-animado ul {
-  list-style: none;
-  padding-left: 10px;
-  animation: cambiar 7s infinite;
-  margin: 0; }
-
-.contenedor-animado p {
-  margin: 0; }
-
-@keyframes cambiar {
-  0% {
-    margin-top: 0; }
-  20% {
-    margin-top: 0; }
-  25% {
-    margin-top: -40px; }
-  50% {
-    margin-top: -40px; }
-  55% {
-    margin-top: -80px; }
-  80% {
-    margin-top: -80px; }
-  85% {
-    margin-top: -40px; }
-  95% {
-    margin-top: -40px; }
-  100% {
-    margin-top: 0; } }
-
-.grilla-0km {
-  margin-top: 60px; }
-
-.caja-0km {
-  margin: 20px; }
-
-.caja-0km p {
-  font-size: 1.2rem;
-  text-align: center;
+.asesoria-icono {
   justify-content: center;
-  padding: 10%; }
-
-#galeria img {
-  width: 100%;
-  height: 300px; }
-
-#galeria .col-lg-4 {
-  margin: 0 !important;
-  padding: 15px; }
-
-#galeria img:hover {
-  border: 5px solid #fff; }
-
-.text-center {
-  font-size: 1.5rem; }
-
-@media (max-width: 858px) {
-  .caja-okm h2 {
-    color: #fff; } }
-
-/* usados*/
-.usados_titulo h2 {
-  color: red;
-  font-size: 48px;
   text-align: center;
-  text-transform: uppercase; }
-
-/* fotos e info usados*/
-#grilla_usados {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  justify-items: center;
-  margin-bottom: 50px; }
-
-#grilla_usados img {
-  width: 450px;
-  height: 350px; }
-
-.grilla_cuerpo {
-  border: 3px solid;
-  margin: 20px;
-  padding: 20px;
-  width: 500px;
-  height: 600px; }
-
-.grilla_cuerpo h3 {
-  font-size: 20px;
-  text-align: center; }
-
-.grilla_cuerpo p {
-  font-size: 20px;
   border: 2px solid;
-  width: 200px;
-  text-align: center;
-  margin-left: 130px;
-  background: #FC9999;
-  text-transform: uppercase;
-  color: #fff; }
+  margin: 10px;
+  background-color: #BCF9A7;
+  text-decoration: none;
+  padding-top: 1rem; }
+  .asesoria-icono p {
+    font-size: 1.2rem;
+    color: #FD1283; }
+  .asesoria-icono a {
+    text-decoration: none; }
 
-/*descuentos usados */
-.descuentos_usados {
-  font-size: 30px;
+/*Distintas formas de Pagos */
+.f-pagos {
   text-align: center;
   text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  background-color: #c2e5f8;
-  border-radius: 5%; }
+  font-size: 2vh;
+  width: 100%;
+  height: 9rem;
+  padding: 2rem; }
+
+.pagos-lista {
+  text-align: center;
+  align-items: center; }
+  .pagos-lista p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FD1283; }
+  .pagos-lista svg {
+    width: 200px;
+    height: 90px; }
+
+@media (max-width: 858px) {
+  .f-pagos {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 6rem; }
+  .menu-items {
+    font-size: 1.5vh; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+:root {
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%); }
+
+.menu-items {
+  font-size: 3vh;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px; }
+
+.icono_redes {
+  width: 40px;
+  height: 40px; }
+
+.logo {
+  width: 90px; }
+
+.container-fluid {
+  background: #aae2f3; }
+
+#MenuNavegacion {
+  justify-content: center; }
+
+.menu-items:hover {
+  background: rgba(102, 193, 253, 0.822); }
+
+.carousel-item {
+  height: 35rem; }
+
+.imagen-carousel {
+  height: 100%;
+  object-fit: cover; }

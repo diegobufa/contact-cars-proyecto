@@ -1,0 +1,19 @@
+/*gps*/
+@import "variables";
+
+.gps-texto {
+    background: $colorPrimario; 
+    p {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align:center;
+    }
+   
+}
+.gps-iframe{
+    width:100%;
+}
+
+.iframe{
+    height: 20rem;
+}
