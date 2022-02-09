@@ -4,6 +4,10 @@
     height: 3rem;
     
 }
+.asesoria-box {
+     padding: 20px;
+     padding-bottom: 30px;
+}
 .asesoria-icono{
     justify-content: center;
     text-align: center;
@@ -13,12 +17,19 @@
     text-decoration: none;
     padding-top: 1rem;
         p{
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         color: #FD1283;
          }
         a{
             text-decoration: none;
         }
+}
+@media (max-width: 858px) {
+    .asesoria-icono{
+        p{
+            font-size: 1.4rem;
+        }
+    }
 }
 
 
