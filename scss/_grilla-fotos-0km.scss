@@ -45,6 +45,11 @@
     clip-path: var(--clippy);
     transition: clip-path 2s;
 }
+@media (max-width: 650px){
+    .item::before{
+        width: 100%;
+    }
+}
 .paragraph::before{
     background: #f86d70;
 }

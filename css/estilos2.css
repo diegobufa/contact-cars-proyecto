@@ -196,6 +196,10 @@
   clip-path: var(--clippy);
   transition: clip-path 2s; }
 
+@media (max-width: 650px) {
+  .item::before {
+    width: 100%; } }
+
 .paragraph::before {
   background: #f86d70; }
 
@@ -318,6 +322,12 @@
     font-size: .8rem; }
   .footer-pie p {
     font-size: .2rem; } }
+
+@media (max-width: 358px) {
+  .footer p {
+    font-size: .6rem; }
+  .footer h3 {
+    font-size: .6rem; } }
 
 /* Redes Sociales */
 /* se utilizo un extend */
@@ -448,8 +458,7 @@
   text-transform: uppercase;
   font-size: 2.5rem;
   width: 100%;
-  height: 9rem;
-  padding: 2rem; }
+  height: 9rem; }
 
 .pagos-lista, .pagos-lista p {
   text-align: center;
