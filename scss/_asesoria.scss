@@ -27,9 +27,18 @@
 @media (max-width: 858px) {
     .asesoria-icono{
         p{
-            font-size: 1.4rem;
+            font-size: .8rem;
         }
     }
+}
+@media (max-width: 650px)
+{
+    .asesoria-icono{
+        p{
+            font-size: .6rem;
+        }
+}
+
 }
 
 

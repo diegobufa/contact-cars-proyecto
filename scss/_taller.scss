@@ -1,0 +1,36 @@
+/* Taller */
+
+.contenedor-info{
+    
+    h2 {
+        @include caja-0km (3rem,red, center,uppercase );
+      }
+    h3{
+        @include caja-0km (2rem,#000, center,uppercase );
+    }
+    p{
+        @include caja-0km (1.2rem,#000, center,uppercase );
+    }
+
+} 
+
+.texto-taller {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+@media (max-width: 850px){
+    .contenedor-info{
+        h2 {
+            @include caja-0km (1.2rem,red, center,uppercase );
+          }
+        h3{
+            @include caja-0km (1rem,#000, center,uppercase );
+        }
+        p{
+            @include caja-0km (.8rem,#000, center,uppercase );
+        }
+
+    }
+    
+    
+}

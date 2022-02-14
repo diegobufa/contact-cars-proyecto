@@ -70,6 +70,9 @@
     text-align: center;
     justify-content: center;
     padding: 10%; }
+  .caja-0km img {
+    width: 100%;
+    object-fit: cover; }
 
 #galeria img {
   width: 100%;
@@ -85,48 +88,62 @@
 .text-center {
   font-size: 1.5rem; }
 
-@media (max-width: 858px) {
-  .caja-okm h2 {
-    color: #fff; } }
+@media (max-width: 850px) {
+  .caja-0km h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: red;
+    text-transform: uppercase; }
+  .caja-0km h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgba(0, 162, 255, 0.822);
+    text-transform: uppercase; }
+  .caja-0km p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase; }
+  .contenedor-animado {
+    font-size: 1rem;
+    margin-left: 20%;
+    width: 300px; } }
 
 /* usados*/
-.usados_titulo h2 {
-  color: red;
-  font-size: 48px;
+.titulo-usados {
+  font-size: 2.5rem;
   text-align: center;
+  text-transform: uppercase;
+  color: red;
+  text-decoration: underline; }
+
+.usados-foto {
+  height: 350px;
+  margin: 20px;
+  align-items: center; }
+  .usados-foto img {
+    width: 100%;
+    height: 350px; }
+  .usados-foto img:hover {
+    border: 5px solid #fff; }
+
+.card-text {
+  font-size: 1.2rem;
+  text-align: center; }
+
+.usados-texto h3 {
+  font-size: 1.8rem;
   text-transform: uppercase; }
 
-/* fotos e info usados*/
-#grilla_usados {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  justify-items: center;
-  margin-bottom: 50px; }
-  #grilla_usados img {
-    width: 450px;
-    height: 350px; }
+.usados-texto h4 {
+  font-size: 1rem;
+  text-align: center; }
 
-.grilla_cuerpo {
-  border: 3px solid;
-  margin: 20px;
-  padding: 20px;
-  width: 500px;
-  height: 600px; }
-  .grilla_cuerpo h3 {
-    font-size: 20px;
-    text-align: center; }
-  .grilla_cuerpo p {
-    font-size: 20px;
-    border: 2px solid;
-    width: 200px;
-    text-align: center;
-    margin-left: 130px;
-    background: #FC9999;
-    text-transform: uppercase;
-    color: #fff; }
+.usados-texto h5 {
+  font-size: .8rem; }
+
+.card-footer a p {
+  font-size: 1.4rem; }
 
 /*descuentos usados */
 .descuentos_usados {
@@ -136,7 +153,9 @@
   display: flex;
   flex-direction: column;
   background-color: #c2e5f8;
-  border-radius: 5%; }
+  border-radius: 5%;
+  padding-top: 20px;
+  margin-top: 40px; }
 
 /* grilla de okm*/
 .flota_0km {
@@ -156,7 +175,8 @@
 .paragraph {
   font-size: 2rem;
   font-weight: 300;
-  --clippy: circle(0% at 50% 50%); }
+  --clippy: circle(0% at 50% 50%);
+  margin-bottom: 30px; }
 
 .item {
   position: relative;
@@ -189,6 +209,15 @@
 .name:hover,
 .name:hover + .paragraph {
   color: #fff; }
+
+.contenedor-auto {
+  width: 350px;
+  height: 250px;
+  margin: auto; }
+
+.contenedor-grilla {
+  width: 100%;
+  height: 100%; }
 
 .contenedor-auto figure {
   position: relative;
@@ -246,7 +275,22 @@
 
 .card-footer {
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 20px; }
+
+@media (max-width: 858px) {
+  .name {
+    font-size: 2rem; }
+  .paragraph {
+    font-size: 1.5rem;
+    padding-bottom: 40px; } }
+
+@media (max-width: 660px) {
+  .contenedor-auto figure {
+    width: 250px;
+    height: 250px; }
+  .contenedor-auto {
+    width: 250px; } }
 
 /*footer */
 .footer {
@@ -339,6 +383,11 @@
     width: 80px;
     height: 60px; } }
 
+@media (max-width: 650px) {
+  .logo_redes {
+    width: 50px;
+    height: 40px; } }
+
 /*gps*/
 /*variables*/
 .gps-texto {
@@ -353,6 +402,14 @@
 
 .iframe {
   height: 20rem; }
+
+@media (max-width: 850px) {
+  .gps-texto p {
+    font-size: 1.2rem; } }
+
+@media (max-width: 650px) {
+  .gps-texto p {
+    font-size: 1rem; } }
 
 /*asesoria */
 .icono_asesoria {
@@ -379,13 +436,17 @@
 
 @media (max-width: 858px) {
   .asesoria-icono p {
-    font-size: 1.4rem; } }
+    font-size: .8rem; } }
+
+@media (max-width: 650px) {
+  .asesoria-icono p {
+    font-size: .6rem; } }
 
 /*Distintas formas de Pagos */
 .f-pagos {
   text-align: center;
   text-transform: uppercase;
-  font-size: 3vh;
+  font-size: 2.5rem;
   width: 100%;
   height: 9rem;
   padding: 2rem; }
@@ -411,6 +472,46 @@
     gap: 2rem; }
   .menu-items {
     font-size: 1.5vh; } }
+
+/* Taller */
+.contenedor-info h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: red;
+  text-transform: uppercase; }
+
+.contenedor-info h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase; }
+
+.contenedor-info p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase; }
+
+.texto-taller {
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+@media (max-width: 850px) {
+  .contenedor-info h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: red;
+    text-transform: uppercase; }
+  .contenedor-info h3 {
+    font-size: 1rem;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase; }
+  .contenedor-info p {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase; } }
 
 /* Codigo */
 * {

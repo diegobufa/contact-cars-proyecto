@@ -21,7 +21,7 @@
     font-size: 2rem;
     font-weight: 300;
     --clippy: circle(0% at 50% 50%);
-    
+    margin-bottom: 30px;
 }
 
 .item{
@@ -60,7 +60,16 @@
 .name:hover + .paragraph{
     color: #fff;
 }
-
+.contenedor-auto{
+    width: 350px;
+    height: 250px;
+    margin: auto;
+}
+.contenedor-grilla {
+    width: 100%;
+    height: 100%;
+       
+}
 .contenedor-auto figure {
     position: relative;
     height: 250px;
@@ -120,4 +129,26 @@
 .card-footer {
     text-align: center;
     text-transform: uppercase;
+    margin-top: 20px;
+        
+}
+
+@media (max-width: 858px){
+    .name {
+        font-size: 2rem;
+    }
+    .paragraph{
+        font-size: 1.5rem;
+        padding-bottom: 40px;
+    }
+}
+@media (max-width: 660px){
+    .contenedor-auto figure{
+        width: 250px;
+        height: 250px;
+        
+    }
+    .contenedor-auto{
+        width: 250px;
+    }
 }

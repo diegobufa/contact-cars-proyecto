@@ -17,3 +17,13 @@
 .iframe{
     height: 20rem;
 }
+@media (max-width: 850px) {
+    .gps-texto p{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 650px) {
+    .gps-texto p{
+        font-size: 1rem;
+    }
+}

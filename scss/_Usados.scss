@@ -1,49 +1,49 @@
 /* usados*/
-.usados_titulo h2{
-    color: red;
-    font-size: 48px;
+.titulo-usados {
+    font-size: 2.5rem;
     text-align: center;
     text-transform: uppercase;
-
+    color: red;
+    text-decoration: underline;
 }
-/* fotos e info usados*/
-#grilla_usados {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center; 
-    width: 100%;
-    height: 100%;
-    justify-items: center;
-    margin-bottom: 50px;
-        img{
-            width: 450px;
-            height: 350px;
-        }
-
-}
-
-.grilla_cuerpo{
+.usados-foto{
     
-    border: 3px solid;
+    height: 350px;
     margin: 20px;
-    padding: 20px;                         
-    width: 500px;
-    height: 600px;
-        h3{
-            font-size: 20px;
-            text-align: center;
-        }
-        p{
-            font-size: 20px;
-            border: 2px solid;
-            width: 200px;
-            text-align: center;
-            margin-left: 130px;
-            background: #FC9999;
-            text-transform: uppercase;
-            color: #fff;
-        }
+    align-items: center;
+    
+    img{
+        width: 100%;
+        height: 350px;
+    }
+    img:hover{
+        border: 5px solid #fff;   
+    }
 }
+
+.card-text {
+    font-size: 1.2rem;
+    text-align: center;
+    
+}
+.usados-texto {
+    h3 {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        } 
+    h4{
+         font-size: 1rem;
+        text-align: center;
+    }
+     h5 {
+        font-size: .8rem;
+    }
+}
+
+.card-footer a p {
+    font-size: 1.4rem;
+}
+
 
 /*descuentos usados */
 .descuentos_usados{
@@ -54,5 +54,7 @@
     flex-direction: column;
     background-color:#c2e5f8;
     border-radius: 5%;
+    padding-top: 20px;
+    margin-top: 40px;
 }
 

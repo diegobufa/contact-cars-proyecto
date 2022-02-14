@@ -13,237 +13,250 @@
     
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <!-- Barra Navegador Menu-->
-    <header>   
-       
-        <div class="container-fluid">
-            <!-- Barra de navegacion-->
-            <nav class="navbar navbar-expand-md navbar-light">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- Barra Navegador Menu-->
+        <header>   
+        
             <div class="container-fluid">
-                    <a class="nav-link logo" href="../index.html">
-                        <img class="logo"  src="../img/unnamed.png" alt="logo" width="90px" height="90px">
-                    </a>  
-                    <button type="buttom" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div id="MenuNavegacion" class="collapse navbar-collapse">
-                        <ul class="navbar-nav ms-7 ">
-                            <li class="nav-item"> <a  class="nav-link menu-items" href="okm2.html">0km</a>   </li>
-                            <li class="nav-item"> <a  class="nav-link menu-items" href="usados.html">Usados</a> </li>
-                            <li class="nav-item"> <a  class="nav-link menu-items" href="taller.html">Taller</a> </li>
-                            <li class="nav-item"> <a  class="nav-link menu-items"  href="contacto.html">Contacto</a> </li>
+                <!-- Barra de navegacion-->
+                <nav class="navbar navbar-expand-xl navbar-light">
+                <div class="container-fluid">
+                        <a class="nav-link logo" href="../index.html">
+                            <img class="logo"  src="../img/unnamed.png" alt="logo" width="90px" height="90px">
+                        </a>  
+                        <button type="buttom" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="MenuNavegacion" class="collapse navbar-collapse">
+                            <ul class="navbar-nav ms-7 ">
+                                <li class="nav-item"> <a  class="nav-link menu-items" href="okm2.html">0km</a>   </li>
+                                <li class="nav-item"> <a  class="nav-link menu-items" href="usados.html">Usados</a> </li>
+                                <li class="nav-item"> <a  class="nav-link menu-items" href="taller.html">Taller</a> </li>
+                                <li class="nav-item"> <a  class="nav-link menu-items"  href="contacto.html">Contacto</a> </li>
+                                
+                                <li class="nav-item"> 
+                                    <a class="nav-link menu-items " href="https://www.whatsapp.com/" target="_blank">
+                                        <svg class="icono_redes "  xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                                            <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link menu-items" href="https://www.facebook.com" target="_blank">
+                                        <svg class="icono_redes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu-items" href="https://www.instagram.com/?hl=es-la" target="_blank" >
+                                        <svg class="icono_redes" xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <rect x="4" y="4" width="16" height="16" rx="4" />
+                                            <circle cx="12" cy="12" r="3" />
+                                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                </div>
+                    
+                </nav>
+                
+            </div>
+                    
+                
+        </header>
+            <!-- Usados-->
+         <main>   
+                <h2 class="titulo-usados"> Nuestros usados </h2>
+                <div class="container">           
+                    <div class="row justify-content-center">
+                        <div class="col-md-5 contenedor-usados">
+                            <div class="card usados-foto">
+                                <img class="img-fluid" src="../img/usados/corsa.jpg" alt="corsa">
+                            </div>
+                            <div class="card-body usados-texto">
+                                <h3 class="card-text"> CHEVROLET CORSA | 2008  </h3>
+                                <h4> 375.000 Km – Motor 1.8 </h4>
+                                <h5> Equipo de Gnc – Sistema de audio – Cristales manuales delanteros y traseros– Alarma – Aire acondicionado – Transmisión manual – 4 Ptas.  </h5> 
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-primary" href="contacto.html" role="button"> mas info </a> 
+                            </div>
+                        </div>
+                        <div class="col-md-5  contenedor-usados">
+                            <div class="card usados-foto">
+                                <img class="img-fluid" src="../img/usados/ecosport.jpg" alt="ecosport">
+                            </div>
+                            <div class="card-body usados-texto">
+                                <h3 class="card-text"> FORD ECOSPORT | 2014  </h3>
+                                <h4> 183.700 Km – Motor 1.6 </h4> 
+                                <h5>  Cristales eléctricos – Cierre centralizado – Airbags -Tapizado tela – Sistema de audio – Aire acondicionado – Transmisión manual – Combustible Nafta. </h5> 
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-primary" href="contacto.html" role="button"> mas info </a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 contenedor-usados">
+                            <div class="card usados-foto">                        
+                                <img class="img-fluid" src="../img/usados/SYMBOL-1536x1152 - copia.jpg" alt="SYMBOL">
+                            </div>
+                            <div class="card-body usados-texto">
+                                <h3 class="card-text"> RENAULT SYMBOL LUXE| 2011  </h3>
+                                <h4> 115.224 Km – Motor 1.6 </h4> 
+                                <h5> Sistema de audio – Tapizado de tela – Cristales eléctricos – Nafta  – Transmisión manual – Airbag – Alarma – Comando remoto para radio en el volante- 4 Ptas. </h5>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-primary" href="contacto.html" role="button"> mas info </a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 contenedor-usados">
+                            <div class="card usados-foto">
+                                <img class="img-fluid" src="../img/usados/fox.jpg" alt="fox">
+                            </div>
+                            <div class="card-body usados-texto">
+                                <h3 class="card-text"> VOLKSWAGEN FOX | 2008  </h3>
+                                <h4> 195.000 Km – Motor 1.6 </h4> 
+                                <h5> Sistema de audio – Tapizado de tela – Cristales manuales – Equipo de Gnc  – Transmisión manual – Posa vasos – Comando remoto para radio en el volante- 5 Ptas. </h5>  
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-primary" href="contacto.html" role="button"> mas info </a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 contenedor-usados">
+                            <div class="card usados-foto">
+                                <img class="img-fluid" src="../img/usados/bora.jpg" alt="bora">
+                            </div>
+                            <div class="card-body usados-texto">
+                                <h3 class="card-text"> VOLKSWAGEN BORA | 2008   </h3>
+                                <h4> 159.300 Km – Motor 1.9 </h4> 
+                                <h5>Sistema de audio – Tapizado de tela – Cristales eléctricos -Cierre centralizado – Airbag – Alarma – Comandos en volante – Techo solar eléctrico – Diésel. </h5>   
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-primary" href="contacto.html" role="button"> mas info </a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 contenedor-usados">
+                            <div class="card usados-foto">
+                                <img class="img-fluid" src="../img/usados/voyage.jpg" alt="voyage">
+                            </div>
+                            <div class="card-body usados-texto">
+                                <h3 class="card-text"> VOLKSWAGEN VOYAGE | 2009   </h3>
+                                <h4> 134.300 km - Motor 1.9  </h4> 
+                                <h5>  Motor 1.6 Sistema de audio – Cristales manuales – Porta vasos en consola central – Tapizado de tela – Equipo de GNC – Transmisión manual – 4 Puertas Airbag – Alarma.</h5> 
+                            </div>
+                            <div class="card-footer">
+                               <a class="btn btn-primary" href="contacto.html" role="button"> mas info </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+                <section>
+                    <div class="descuentos_usados mb-5">                
+                        <div>
+                            <h3>
+                                IMPORTANTES DESCUENTOS Y PROMOCIONES CON LOS MEJORES BANCOS. 
+                            </h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-bank" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <line x1="3" y1="21" x2="21" y2="21" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                                <polyline points="5 6 12 3 19 6" />
+                                <line x1="4" y1="10" x2="4" y2="21" />
+                                <line x1="20" y1="10" x2="20" y2="21" />
+                                <line x1="8" y1="14" x2="8" y2="17" />
+                                <line x1="12" y1="14" x2="12" y2="17" />
+                                <line x1="16" y1="14" x2="16" y2="17" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>
+                                RECORDA QUE TAMBIEN PODES OBTENER UNA AMPLIA FINANCIACION.
+                            </h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-coin" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <circle cx="12" cy="12" r="9" />
+                                <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1 -1.8 -1" />
+                                <path d="M12 6v2m0 8v2" />
+                            </svg>   
+                    </div>
+                </section>
+
+            </main>
+            <!--Pie de pagina-->
+            <footer>
+                <div class="container-fluid footer">
+                    <div class="row">
+                        <div class="col-2 iconos-footer">
+                            <h3> Redes Sociales:</h3>
+
+                            <a href="https://www.instagram.com/?hl=es-la" target="_blank" >
+                                <svg class="icono__instagram" xmlns="http://www.w3.org/2000/svg"   width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                                    <circle cx="12" cy="12" r="3" />
+                                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                                </svg>                        
+                            </a>
+                            <a href="https://www.facebook.com" target="_blank">
+                                <svg class="icono__facebook" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                                </svg>                        
+                            </a>
+                            <a href="https://www.whatsapp.com/" target="_blank">
+                                <svg class="icono__whatsapp"  xmlns="http://www.w3.org/2000/svg"   width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                                    <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                                </svg>                        
+                            </a>
                             
-                            <li class="nav-item"> 
-                                <a class="nav-link menu-items " href="https://www.whatsapp.com/" target="_blank">
-                                    <svg class="icono_redes "  xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                                        <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link menu-items" href="https://www.facebook.com" target="_blank">
-                                    <svg class="icono_redes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link menu-items" href="https://www.instagram.com/?hl=es-la" target="_blank" >
-                                    <svg class="icono_redes" xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                        <rect x="4" y="4" width="16" height="16" rx="4" />
-                                        <circle cx="12" cy="12" r="3" />
-                                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                        </div>
+                        <!-- Info Footer-->
+                        <div class="col-6 footer-hora">
+                            <h3>    Nuestros horarios:   </h3>
+                            <p> 
+                                Lunes a Viernes  De 9:00 a 13:30 hs y de 16:30 a 19:00 hs. Sábados de 9:00 a 13.30 Hs.
+                            </p>
+                        </div>
+                        <div class="col-3 footer-dire">
+                            <h3> Nuestras Direcciones:</h3>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                <circle cx="12" cy="11" r="3" />
+                                                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                                            </svg>
+                                            <p>Bv. Rondeau 4177</p>
+                                            
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                <circle cx="12" cy="11" r="3" />
+                                                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                                            </svg>
+                                            <p>Bv. J. Granel 2616</p>
+                        </div>  
+                        
                     </div>
-                    
-            </div>
+                </div>
                 
-            </nav>
-            
-        </div>
                 
-             
-   </header>
-   <!-- Usados-->
-    <main>  
-        <div class="container">
-            <h2> Nuestros usados </h2>
-            <div class="row">
-                <div class="col-6">
-                    <div class="card">
-                        <img src="../img/usados/corsa.jpg" alt="corsa">
-                    </div>
-                    <div class="card-body">
-                         <h3 class="card-text"> CHEVROLET CORSA | 2008 375.000 Km – Motor 1.8 – Equipo de Gnc – Sistema de audio – Cristales manuales delanteros y traseros – Tapizado tela – Alarma – Aire acondicionado – Transmisión manual – 4 Ptas. </h3>
-                    </div>
-                    <div class="card-footer">
-                        <a href="contacto.html"> <p> mas info </p> </a> 
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card">
-                        <img src="../img/usados/ecosport.jpg" alt="ecosport">
-                    </div>
-                    <div class="card-body">
-                         <h3 class="card-text"> FORD ECOSPORT | 2014 183.700 Km – Motor 1.6- Cristales eléctricos – Cierre centralizado – Airbags -Tapizado tela – Sistema de audio – Aire acondicionado – Transmisión manual – Combustible Nafta. </h3>
-                    </div>
-                    <div class="card-footer">
-                        <a href="contacto.html"> <p> mas info </p> </a> 
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card">                        
-                        <img src="../img/usados/SYMBOL-1536x1152 - copia.jpg" alt="SYMBOL">
-                    </div>
-                    <div class="card-body">
-                         <h3 class="card-text"> RENAULT SYMBOL LUXE| 2011 115.224 Km – Motor 1.6 – Sistema de audio – Tapizado de tela – Cristales eléctricos – Nafta  – Transmisión manual – Airbag – Alarma – Comando remoto para radio en el volante- 4 Ptas. </h3>
-                    </div>
-                    <div class="card-footer">
-                        <a href="contacto.html"> <p> mas info </p> </a> 
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card">
-                        <img src="../img/usados/fox.jpg" alt="fox">
-                    </div>
-                    <div class="card-body">
-                         <h3 class="card-text"> VOLKSWAGEN FOX | 2008 195.000 Km – Motor 1.6 – Sistema de audio – Tapizado de tela – Cristales manuales – Equipo de Gnc  – Transmisión manual – Posa vasos – Comando remoto para radio en el volante- 5 Ptas. </h3>
-                    </div>
-                    <div class="card-footer">
-                        <a href="contacto.html"> <p> mas info </p> </a> 
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card">
-                        <img src="../img/usados/bora.jpg" alt="bora">
-                    </div>
-                    <div class="card-body">
-                         <h3 class="card-text"> VOLKSWAGEN BORA | 2008 159.300 Km – Motor 1.9 – Sistema de audio – Tapizado de tela – Cristales eléctricos -Cierre centralizado – Airbag – Alarma – Comandos en volante – Techo solar eléctrico – Diésel. </h3>
-                    </div>
-                    <div class="card-footer">
-                        <a href="contacto.html"> <p> mas info </p> </a> 
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card">
-                        <img src="../img/usados/voyage.jpg" alt="voyage">
-                    </div>
-                    <div class="card-body">
-                         <h3 class="card-text"> VOLKSWAGEN VOYAGE | 2009  Motor 1.6 – Sistema de audio – Cristales manuales – Porta vasos en consola central – Tapizado de tela – Equipo de GNC – Transmisión manual – 4 Puertas. </h3>
-                    </div>
-                    <div class="card-footer">
-                        <a href="contacto.html"> <p> mas info </p> </a> 
-                    </div>
-                </div>
-            </div>
-        </div>        
-        <section>
-            <div class="descuentos_usados">                
-                <div>
-                    <h3>
-                        IMPORTANTES DESCUENTOS Y PROMOCIONES CON LOS MEJORES BANCOS. 
-                    </h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-bank" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <line x1="3" y1="21" x2="21" y2="21" />
-                        <line x1="3" y1="10" x2="21" y2="10" />
-                        <polyline points="5 6 12 3 19 6" />
-                        <line x1="4" y1="10" x2="4" y2="21" />
-                        <line x1="20" y1="10" x2="20" y2="21" />
-                        <line x1="8" y1="14" x2="8" y2="17" />
-                        <line x1="12" y1="14" x2="12" y2="17" />
-                        <line x1="16" y1="14" x2="16" y2="17" />
-                      </svg>
-                </div>
-                <div>
-                    <h3>
-                        RECORDA QUE TAMBIEN PODES OBTENER UNA AMPLIA FINANCIACION.
-                    </h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-coin" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="12" cy="12" r="9" />
-                        <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1 -1.8 -1" />
-                        <path d="M12 6v2m0 8v2" />
-                      </svg>   
-            </div>
-        </section>
 
-    </main>
-    <!--Pie de pagina-->
-    <footer>
-        <div class="container footer">
-            <div class="row">
-                <div class="col-2 iconos-footer">
-                    <h3> Redes Sociales:</h3>
-
-                    <a href="https://www.instagram.com/?hl=es-la" target="_blank" >
-                        <svg class="icono__instagram" xmlns="http://www.w3.org/2000/svg"   width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <rect x="4" y="4" width="16" height="16" rx="4" />
-                            <circle cx="12" cy="12" r="3" />
-                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                        </svg>                        
-                    </a>
-                    <a href="https://www.facebook.com" target="_blank">
-                        <svg class="icono__facebook" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                        </svg>                        
-                    </a>
-                    <a href="https://www.whatsapp.com/" target="_blank">
-                        <svg class="icono__whatsapp"  xmlns="http://www.w3.org/2000/svg"   width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                            <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
-                        </svg>                        
-                    </a>
+                <div class="container footer-pie">
+                    <div class="row justify-content-center caja-footer">
+                        <p> Las imágenes publicadas en este sitio son de carácter ilustrativo. Consulte equipamientos y especificaciones técnicas en nuestra red de concesionarios oficiales. Ver términos y condiciones y promociones.</p>
                     
+                    </div>
                 </div>
-                <div class="col-6 footer-hora">
-                    <h3>    Nuestros horarios:   </h3>
-                    <p> 
-                        Lunes a Viernes  De 9:00 a 13:30 hs y de 16:30 a 19:00 hs. Sábados de 9:00 a 13.30 Hs.
-                    </p>
-                 </div>
-                <div class="col-3 footer-dire">
-                    <h3> Nuestras Direcciones:</h3>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                        <circle cx="12" cy="11" r="3" />
-                                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                                    </svg>
-                                    <p>Bv. Rondeau 4177</p>
-                                    
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                        <circle cx="12" cy="11" r="3" />
-                                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                                    </svg>
-                                    <p>Bv. J. Granel 2616</p>
-                 </div>  
-                 
-            </div>
-        </div>
-        
-        
-       
-        <div class="container footer-pie">
-            <div class="row justify-content-center caja-footer">
-                <p> Las imágenes publicadas en este sitio son de carácter ilustrativo. Consulte equipamientos y especificaciones técnicas en nuestra red de concesionarios oficiales. Ver términos y condiciones y promociones.</p>
-               
-            </div>
-        </div>
-    </footer>
-      
+            </footer>
+
 
   
-  </body>
+    </body>
 </html>
