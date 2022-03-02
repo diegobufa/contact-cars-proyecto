@@ -7,7 +7,7 @@
        
     }
     h3{
-        @include caja-0km(2rem,rgba(0, 162, 255, 0.822) ,center,uppercase );
+        @include caja-0km(2rem,rgba(0, 162, 255, 0.822) , center,uppercase );
         
     }
     p{
@@ -62,10 +62,7 @@
 .caja-0km {
     margin: 20px;
     p {
-        font-size: 1.2rem;
-        text-align: center;
-        justify-content: center;
-        padding: 10%;
+        font-size: 1.2rem;   
     }
     img{
         width:100%;
@@ -75,19 +72,85 @@
 
 #galeria img{
     width: 100%;
-    height: 300px;
-   
-
+  
 }
-#galeria .fotos-amarok {
-    margin: 0 !important;
-    padding: 15px;
+.foto-1{
+    height: 350px;
+}
+.foto-2{
+    height: 230px;
 }
 #galeria  img:hover {
     border: 5px solid #fff;   
 }
 .text-center {
     font-size: 1.5rem;
+}
+.imagen-nivus{
+    width: 100%;
+    height: 400px;
+}
+.nivus-animacion{
+    
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    
+}
+.nivus-header{
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #FFD700, #7B68EE,#3498db, #2ecc71, #FFD700);
+    background-clip: text;
+    background-size: 400%;
+    font-size: 4rem;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    font-weight: 600;
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;    
+    animation: color 10s linear infinite;
+    
+}
+@keyframes color{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+
+
+.nivus h2{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    
+}
+.nivus h5{
+    font-size: .8rem;
+    text-align: center;
+}
+
+.texto-nivus{
+    
+    h2{
+        font-size: 2rem;
+        text-align: center;
+        
+    }
+    h3{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 1.1rem;
+
+    }
+
 }
 @media (max-width: 850px) {
     .caja-0km{
@@ -109,4 +172,5 @@
         margin-left: 20%;
         width: 300px;
     }
+    
 }

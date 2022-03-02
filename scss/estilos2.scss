@@ -30,8 +30,12 @@
     text-align: center;
     text-transform: uppercase;
     margin: 10px;
-    
-      
+}
+.nav-items-redes{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: center;
 }
 .icono_redes {
     width: 40px;

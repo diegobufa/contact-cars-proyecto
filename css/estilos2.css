@@ -66,27 +66,75 @@
 .caja-0km {
   margin: 20px; }
   .caja-0km p {
-    font-size: 1.2rem;
-    text-align: center;
-    justify-content: center;
-    padding: 10%; }
+    font-size: 1.2rem; }
   .caja-0km img {
     width: 100%;
     object-fit: cover; }
 
 #galeria img {
-  width: 100%;
-  height: 300px; }
+  width: 100%; }
 
-#galeria .fotos-amarok {
-  margin: 0 !important;
-  padding: 15px; }
+.foto-1 {
+  height: 350px; }
+
+.foto-2 {
+  height: 230px; }
 
 #galeria img:hover {
   border: 5px solid #fff; }
 
 .text-center {
   font-size: 1.5rem; }
+
+.imagen-nivus {
+  width: 100%;
+  height: 400px; }
+
+.nivus-animacion {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000; }
+
+.nivus-header {
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);
+  background-clip: text;
+  background-size: 400%;
+  font-size: 4rem;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  font-weight: 600;
+  word-spacing: 5px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: color 10s linear infinite; }
+
+@keyframes color {
+  0% {
+    background-position: 0%; }
+  100% {
+    background-position: 400%; } }
+
+.nivus h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600; }
+
+.nivus h5 {
+  font-size: .8rem;
+  text-align: center; }
+
+.texto-nivus h2 {
+  font-size: 2rem;
+  text-align: center; }
+
+.texto-nivus h3 {
+  font-size: 1.4rem;
+  text-align: center; }
+
+.texto-nivus p {
+  text-align: center;
+  font-size: 1.1rem; }
 
 @media (max-width: 850px) {
   .caja-0km h2 {
@@ -118,10 +166,9 @@
   text-decoration: underline; }
 
 .usados-foto {
-  height: 350px;
   margin: 20px;
   align-items: center; }
-  .usados-foto img {
+  .usados-foto .imagen-fluid {
     width: 100%;
     height: 350px; }
   .usados-foto img:hover {
@@ -297,11 +344,58 @@
     width: 250px; } }
 
 /*footer */
+.pie-de-pagina {
+  width: 100%;
+  background-color: #aae2f3; }
+
+.pie-de-pagina .grupo-footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 45px 0px; }
+
+.grupo-footer .horarios {
+  justify-content: center;
+  align-items: center; }
+  .grupo-footer .horarios h3 {
+    font-size: 1rem;
+    text-align: center; }
+  .grupo-footer .horarios p {
+    font-size: .8rem;
+    text-align: center; }
+
+.grupo-footer .redes-sociales .redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.grupo-footer .redes-sociales h3 {
+  font-size: 1rem;
+  text-align: center; }
+
+.grupo-footer .direccion .dire {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.grupo-footer .direccion h3 {
+  font-size: 1rem;
+  text-align: center; }
+
+.grupo-footer .direccion p {
+  font-size: .8rem;
+  text-align: center; }
+
 .footer {
   padding-top: 2rem; }
   .footer-dire {
     text-align: center;
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    flex-direction: row; }
   .footer-hora {
     text-align: center;
     font-size: 0.8rem; }
@@ -321,13 +415,15 @@
   .footer h3 {
     font-size: .8rem; }
   .footer-pie p {
-    font-size: .2rem; } }
+    font-size: .4rem; } }
 
 @media (max-width: 358px) {
   .footer p {
     font-size: .6rem; }
   .footer h3 {
-    font-size: .6rem; } }
+    font-size: .6rem; }
+  .pie-de-pagina .grupo-footer {
+    grid-template-columns: repeat(1, 1fr); } }
 
 /* Redes Sociales */
 /* se utilizo un extend */
@@ -540,6 +636,12 @@
   text-align: center;
   text-transform: uppercase;
   margin: 10px; }
+
+.nav-items-redes {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  justify-content: center; }
 
 .icono_redes {
   width: 40px;

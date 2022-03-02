@@ -1,11 +1,72 @@
 /*footer */
 
+.pie-de-pagina{
+    width: 100%;
+    background-color: $colorFondo;
 
+}
+.pie-de-pagina .grupo-footer{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    padding: 45px 0px;
+
+}
+.grupo-footer{
+    
+    .horarios {
+        justify-content: center;
+        align-items: center;
+        h3{
+            font-size: 1rem;
+            text-align: center;
+        }
+        p{
+            font-size:.8rem;
+            text-align: center;
+        }
+    
+} 
+    .redes-sociales {
+        .redes{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        h3{
+            font-size: 1rem;
+            text-align: center;
+        }
+
+    }
+    .direccion{        
+        .dire{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;  
+        }        
+        h3{
+            font-size: 1rem;
+            text-align: center;
+        }
+        p{
+            font-size: .8rem;
+            text-align: center;
+        }
+    }
+    
+}
 .footer {
     padding-top: 2rem;
     
     &-dire{
         @include footer (center,.8rem);
+        flex-direction: row;
     }
     &-hora{
         @include footer (center,.8rem);
@@ -35,7 +96,7 @@
     } 
     
     .footer-pie p{
-        font-size: .2rem;
+        font-size: .4rem;
     }
 }
 @media (max-width: 358px){
@@ -47,5 +108,12 @@
             font-size: .6rem;
         }
     } 
+    .pie-de-pagina .grupo-footer{
+        
+        grid-template-columns: repeat(1, 1fr);
+        
+    
+    }
+
 }
 
