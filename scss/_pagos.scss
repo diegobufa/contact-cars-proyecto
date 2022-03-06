@@ -6,10 +6,7 @@
     text-transform: uppercase;
     font-size: 2.5rem;    
     width: 100%;
-    height: 9rem;
-    
-    
-    
+    height: 9rem;   
 }
 .pagos-lista {
     
@@ -32,17 +29,28 @@
 
 
 
-@media (max-width: 858px){
+@media (max-width: 890px){
     .f-pagos  {
-        font-size: 2vh;
+        font-size: 1rem;
         margin: 0;
         padding: 0;    
         text-align: center;
         height: 6rem;
         gap: 2rem;
+        line-height: 30px;
     }
     .menu-items {
         font-size: 1.5vh;
         
+    }
+}
+@media (max-width: 680px){
+    .pagos-lista {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 350px){
+    .f-pagos{
+        font-size: .8rem;
     }
 }

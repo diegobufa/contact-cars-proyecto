@@ -30,6 +30,7 @@
     text-align: center;
     text-transform: uppercase;
     margin: 10px;
+    
 }
 .nav-items-redes{
     display: flex;
@@ -49,9 +50,8 @@
 .container-fluid {
     background: $colorFondo;
 }
-#MenuNavegacion {
-    justify-content: center;
-    
+#menuNavegacion {
+    justify-content: center;  
     
 }
 .menu-items:hover {
@@ -60,7 +60,6 @@
 }
 .carousel-item {
     height: 35rem;
-
 
 }
 .imagen-carousel {

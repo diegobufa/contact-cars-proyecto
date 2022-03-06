@@ -27,10 +27,7 @@
 .item{
     position: relative;
     padding-left: 1rem;
-    transition: color 1s;
-
-    
-    
+    transition: color 1s;  
 }
 .item::before{
     content: "";
@@ -45,11 +42,7 @@
     clip-path: var(--clippy);
     transition: clip-path 2s;
 }
-@media (max-width: 650px){
-    .item::before{
-        width: 100%;
-    }
-}
+
 .paragraph::before{
     background: #f86d70;
 }
@@ -147,6 +140,11 @@
         padding-bottom: 40px;
     }
 }
+@media (max-width: 650px){
+    .item::before{
+        width: 100%;
+    }
+}
 @media (max-width: 660px){
     .contenedor-auto figure{
         width: 250px;
@@ -156,4 +154,5 @@
     .contenedor-auto{
         width: 250px;
     }
+    
 }

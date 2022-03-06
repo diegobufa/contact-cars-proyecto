@@ -23,12 +23,12 @@
                 <nav class="navbar navbar-expand-xl navbar-light">
                     <div class="container-fluid">
                             <a class="nav-link logo" href="../index.html">
-                                <img class="logo"  src="../img/unnamed.png" alt="logo" width="90px" height="90px">
+                                <img class="logo"  src="../img/unnamed.png" alt="logo" width="60px" height="60px">
                             </a>  
-                            <button type="buttom" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div id="MenuNavegacion" class="collapse navbar-collapse">
+                            <div id="menuNavegacion" class="collapse navbar-collapse">
                                 <ul class="navbar-nav ms-7 ">
                                     <li class="nav-item"> <a  class="nav-link menu-items" href="okm2.html">0km</a>   </li>
                                     <li class="nav-item"> <a  class="nav-link menu-items" href="usados.html">Usados</a> </li>
@@ -70,7 +70,7 @@
                 
             </div>
         </header>
-    <!-- Taller-->
+      <!-- Taller-->
         <main>  
             
             <section>
@@ -217,64 +217,60 @@
                 <!-- Formulario Modal -->
                 <div class="modal" id="pedir-turno" tabindex="-1">
                     <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title "> Pedir Turnos: </h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title "> Pedir Turnos: </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                             <div class="modal-body">
+                                 <form>
+                                      <div class="form-group">
+                                          <label for="text" class="form-label"> </label>
+                                          <input type="text" class="form-control" placeholder="Nombre y Apellido" name="text"> 
+                                      </div>
+                                      <div class="form-group  ">
+                                          <label for="seleccion-horarios">  </label>
+                                          <select  id="horarios-form" class="w-100 custom-select custom-select custom-select-lg ">
+                                              <option selected> Seleccionar Hora </option>
+                                              <option > 9:00hs - 9:30hs  </option>
+                                              <option>  9:30hs - 10:00hs </option>
+                                              <option> 10:00hs - 10:30hs </option>
+                                              <option> 10:30hs - 11:00hs </option>
+                                              <option> 11:00hs - 11:30hs </option>
+                                              <option> 11:30hs - 12:00hs </option>
+                                              <option> 12:00hs - 12:30hs </option>
+                                          </select>
+      
+                                      </div>
+                                      <div class="form-group">
+                                            <label for="tipo-reparacion"></label>
+                                            <select class="w-100 custom-select custom-select custom-select-lg " id="form-reparacion">
+                                                <option selected> Tipo de Reparacion </option>
+                                                <option> Reparacion Motor            </option>
+                                                <option> Refrigeracion               </option>
+                                                <option> Cambio de filtro y aceite   </option>
+                                                <option> Mantenimiento               </option>
+                                                <option> Electricidad y Electronica  </option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="text-area"> Mensaje </label>
+                                            <textarea id="textarea-form-modal" rows="3" class="form-control"></textarea>
+                                        </div>   
+      
+                                    </form>
+                                  
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar </button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal"> Enviar  </button>
+                            </div>
+                        
                         </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="text" class="form-label"> </label>
-                                    <input type="text" class="form-control" placeholder="Nombre y Apellido" name="text"> 
-                                </div>
-                                <div class="form-group  ">
-                                    <label for="seleccion-horarios">  </label>
-                                    <select  id="horarios-form" class="w-100 custom-select custom-select custom-select-lg ">
-                                        <option selected> Seleccionar Hora </option>
-                                        <option > 9:00hs - 9:30hs  </option>
-                                        <option>  9:30hs - 10:00hs </option>
-                                        <option> 10:00hs - 10:30hs </option>
-                                        <option> 10:30hs - 11:00hs </option>
-                                        <option> 11:00hs - 11:30hs </option>
-                                        <option> 11:30hs - 12:00hs </option>
-                                        <option> 12:00hs - 12:30hs </option>
-                                    </select>
-
-                                </div>
-                                <div class="form-group">
-                                    <label for="tipo-reparacion"></label>
-                                    <select class="w-100 custom-select custom-select custom-select-lg " id="form-reparacion">
-                                        <option selected> Tipo de Reparacion </option>
-                                        <option> Reparacion Motor            </option>
-                                        <option> Refrigeracion               </option>
-                                        <option> Cambio de filtro y aceite   </option>
-                                        <option> Mantenimiento               </option>
-                                        <option> Electricidad y Electronica  </option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="text-area"> Mensaje </label>
-                                    <textarea id="textarea-form-modal" rows="3" class="form-control"></textarea>
-                                </div>
-
-
-                            </form>
-                            
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar </button>
-                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal"> Enviar  </button>
-                        </div>
-                      </div>
                     </div>
-                  </div>
+              </div>
             </section>
-            
-          
-           
-
-        </main>
+     </main>
         
         
             <!-- Gps-->
@@ -335,21 +331,22 @@
                     <h3> Nuestras Direcciones:</h3>
                     <div class="dire">
                         
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                            <circle cx="12" cy="11" r="3" />
-                                            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                                        </svg>
-                                        <p>Bv. Rondeau 4177</p>
-                                        
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                            <circle cx="12" cy="11" r="3" />
-                                            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                                        </svg>
-                                        <p>Bv. J. Granel 2616</p>
-                     </div>          
-                </div>    
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="11" r="3" />
+                            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                        </svg>
+                        <p>Bv. Rondeau 4177</p>
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="11" r="3" />
+                            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                        </svg>
+                        <p>Bv. J. Granel 2616</p>
+                        
+                    </div>          
+             </div>    
             </div>
             <div class="container footer-pie">
                 <div class="row justify-content-center caja-footer">

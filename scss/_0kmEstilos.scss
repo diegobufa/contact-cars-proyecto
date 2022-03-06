@@ -2,6 +2,7 @@
 
 
 .caja-0km{
+    margin: 20px;
     h2{
         @include caja-0km(3.5rem,red, center,uppercase );
        
@@ -12,6 +13,10 @@
     }
     p{
         @include caja-0km(1.2rem,#000, center,uppercase)
+    }
+    img{
+        width:100%;
+        object-fit: cover;
     }
 } 
 
@@ -25,7 +30,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-left: 35px;
+    justify-content: center;
     text-transform: uppercase;
         ul{
             list-style: none;
@@ -59,16 +64,9 @@
     margin-top: 60px;
     
 }
-.caja-0km {
-    margin: 20px;
-    p {
-        font-size: 1.2rem;   
-    }
-    img{
-        width:100%;
-        object-fit: cover;
-    }
-}
+
+
+/*Amarok*/
 
 #galeria img{
     width: 100%;
@@ -83,9 +81,11 @@
 #galeria  img:hover {
     border: 5px solid #fff;   
 }
-.text-center {
+.texto-amarok {
     font-size: 1.5rem;
 }
+/*Nivus*/
+
 .imagen-nivus{
     width: 100%;
     height: 400px;
@@ -152,6 +152,8 @@
     }
 
 }
+
+/*Media Queries*/
 @media (max-width: 850px) {
     .caja-0km{
         h2{
@@ -168,9 +170,16 @@
       
     }
     .contenedor-animado {
-        font-size: 1rem;
-        margin-left: 20%;
+        font-size: 1rem;        
         width: 300px;
     }
     
+}
+@media (max-width: 550px){
+    .foto-modal{
+    width: 100%;
+}
+.cont-modal{
+    width:330px;
+}
 }

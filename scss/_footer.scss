@@ -5,7 +5,8 @@
     background-color: $colorFondo;
 
 }
-.pie-de-pagina .grupo-footer{
+
+.grupo-footer{
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -13,9 +14,6 @@
     grid-template-columns: repeat(3, 1fr);    
     padding: 45px 0px;
 
-}
-.grupo-footer{
-    
     .horarios {
         justify-content: center;
         align-items: center;
@@ -43,75 +41,44 @@
         }
 
     }
-    .direccion{        
+    .direccion{ 
+         h3{
+            font-size: 1rem;
+            text-align: center;
+        }      
         .dire{
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;  
-        }        
-        h3{
-            font-size: 1rem;
-            text-align: center;
-        }
-        p{
+            p{
             font-size: .8rem;
             text-align: center;
-        }
+            }
+        }         
     }
     
 }
-.footer {
-    padding-top: 2rem;
-    
-    &-dire{
-        @include footer (center,.8rem);
-        flex-direction: row;
-    }
-    &-hora{
-        @include footer (center,.8rem);
-    }
-    &-pie{
-        @include footer (center, .5rem);
-    }
+.footer-pie {    
+        @include footer (center, .5rem); 
    
 }
-.iconos-footer{
-    margin: 10px;
-    text-align: center;
-    
-}
+
 
 @media (max-width: 858px) {
     .gps-texto p{
         font-size: 1rem;
     }
-    .footer{
-        p {
-        font-size: .8rem;
-        }
-        h3{
-            font-size: .8rem;
-        }
-    } 
+    
     
     .footer-pie p{
         font-size: .4rem;
     }
 }
 @media (max-width: 358px){
-    .footer{
-        p {
-        font-size: .6rem;
-        }
-        h3{
-            font-size: .6rem;
-        }
-    } 
-    .pie-de-pagina .grupo-footer{
-        
-        grid-template-columns: repeat(1, 1fr);
-        
+   
+    .pie-de-pagina .grupo-footer{        
+        grid-template-columns: repeat(1, 1fr);        
     
     }
 
